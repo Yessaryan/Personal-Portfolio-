@@ -10,7 +10,7 @@ const about = {
   role: 'Computer Science Student',
   description:
     'I am a B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. I am passionate about coding, software development, and exploring the latest advancements in AI and ML. With a strong curiosity to learn and build, I enjoy working on innovative tech projects and improving my skills in creating intelligent systems and models.',
-  resume: 'https://drive.google.com/your-resume-link',
+  resume: 'https://drive.google.com/drive/folders/1z_eRRJOQGQIRR5z1n79nirRXzruXbSW8?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/aryan-sawant-a40544226/',
     github: 'https://github.com/yessaryan',
