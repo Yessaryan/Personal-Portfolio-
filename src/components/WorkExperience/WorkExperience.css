@@ -1,0 +1,143 @@
+.work-experience__timeline {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 2.5rem auto;
+  position: relative;
+}
+
+.work-experience__timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--clr-primary);
+  opacity: 0.3;
+}
+
+.work-experience__item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 170px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.work-experience__item:hover {
+  transform: translateX(5px);
+  filter: brightness(1.05);
+}
+
+.work-experience__item:last-child {
+  margin-bottom: 0;
+}
+
+.work-experience__date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 38px;
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  z-index: 1;
+  text-align: center;
+  line-height: 1;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.work-experience__date:hover {
+  background-color: var(--clr-bg-alt);
+  color: var(--clr-primary);
+  transform: scale(1.07) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.work-experience__content {
+  background-color: var(--clr-bg-alt);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border-left: 3px solid var(--clr-primary);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.work-experience__content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-left-width: 5px;
+  background-color: var(--clr-bg);
+}
+
+.work-experience__role {
+  margin: 0 0 0.5rem 0;
+  color: var(--clr-fg-alt);
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.work-experience__content:hover .work-experience__role {
+  color: var(--clr-primary);
+}
+
+.work-experience__company {
+  margin: 0 0 0.5rem 0;
+  color: var(--clr-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.work-experience__content:hover .work-experience__company {
+  transform: translateX(5px);
+}
+
+.work-experience__company a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.work-experience__company a:hover {
+  text-decoration: underline;
+  color: var(--clr-fg-alt);
+}
+
+.work-experience__description {
+  margin: 0;
+  color: var(--clr-fg);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.work-experience__content:hover .work-experience__description {
+  color: var(--clr-fg-alt);
+}
+
+@media (max-width: 600px) {
+  .work-experience__timeline::before {
+    left: 15px;
+  }
+  .work-experience__item {
+    padding-left: 140px;
+  }
+  .work-experience__date {
+    width: 120px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+  .work-experience__content {
+    padding: 1rem;
+  }
+} 
